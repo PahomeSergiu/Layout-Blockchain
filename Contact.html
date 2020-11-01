@@ -7,10 +7,71 @@
         <meta name="author" content="Sergiu">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Page</title>
-        <link rel="stylesheet" type="text/css" href="resources/Contact.css">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="bundles/font-awesome/css/all.css">
+        <link rel="stylesheet" type="text/css" href="resources/main.css">
     </head>
-
     <body>
-        
+        <div class="page-container">
+            <header class="clearfix header-container">
+                <div class="logo-menu-container">
+                    <section class="logo-wrapper" >
+                        <img src="assets/logo.png" alt="logo" class="logo">
+                    </section>
+                    <nav>
+                        <ul class="menu-wrapper">
+                            <li><a class="sign-up" href="Signup.html"><p>Sign-up</p></a></li> 
+                            <li><a href="About.html"><p>About</p></a></li> 
+                            <li><a href="Services.html"><p>Services</p></a></li> 
+                            <li><a href="Contact.html"><p>Contact</p></a></li> 
+                            <li><a href="Community.html"><p>Community</p></a></li> 
+                        </ul>
+                    </nav>
+                </div>
+                <div class="contact-table">
+                    <div class="contact">CONTACT US</div>
+                    <div class="horizontal-line"></div>
+                    <div class="contact">Fill out the form below to learn more.</div>
+                </div>
+            </header>
+
+            <form>
+                <label for="firstName">First Name</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-user"></i>
+                    <input required class="validation-form" id="firstName" type="text" placeholder="Enter your first name" minlength="5">
+                </div>
+
+                <label for="lastName">Last Name</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-user"></i>
+                    <input required class="validation-form" id="lastName" type="text" placeholder="Enter your last name" minlength="5">
+                </div>
+
+                <label for="Email">Email</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-envelope"></i>
+                    <input required class="validation-form" id="Email" type="email" placeholder="Enter your email" minlength="5">
+                </div>
+
+                <div class="horizontal-line-form"></div>
+                 
+                
+                <label class="message" for="textarea">Message</label>
+                <textarea required class="validation-form" id="textarea" rows="5" cols="40" minlength="50" maxlength="250"></textarea>
+            
+                <div class="submit-section">
+                    <div class="submit-enter-wrapper">
+                        <button type="submit">Submit</button>
+                        <div>or press </div><a href="#">enter</a> 
+                    </div>
+                
+                    <div class="blockchain-technology-wrapper">
+                        <div>BLOCKCHAIN</div>
+                        <div>TECHNOLOGY</div>
+                    </div>
+                </div>  
+            </form>
+        </div>
     </body>
  </html>   
