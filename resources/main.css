@@ -135,6 +135,13 @@ main div span{
     border: none;
     border-bottom: #acfdfe solid 1px;
     width: 150px;
+    /* margin: 0 0 10px 30px; */
+    /* pentru centrare orizontala iti recomand tehnica asta */
+    margin: 0 auto;
+}
+
+/* observ aici ca ai nevoie de stil diferit pentru pagina de contact, poti fara probleme sa diferentiezi intre ele */
+.page-container .horizontal-line {
     margin: 0 0 10px 30px;
 }
 
@@ -174,6 +181,8 @@ form {
 }
 
 form label {
+    /* width-ul asta puteai sa il setezi pe intrgul form sau pe un form wrapper si poti sa fi mai generos, pentru ca asa cu 300px folosesti prea putin din pagina si e pacat de tot spatiul ala */
+    /* ideea principala este ca ai evita sa folosesti cod duplicat pentru fiecare element in parte */
     width: 300px;
     height: 30px;
     text-align: left;
